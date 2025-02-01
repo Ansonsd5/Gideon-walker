@@ -1,9 +1,9 @@
 import React from 'react';
 
 function Button(props) {
-const {} = props;
+const {icon, buttonText, handleButton} = props;
   return (
-    <div>Button</div>
+    <button className='flex cursor-pointer align-items-center' onClick={()=>handleButton()}>{buttonText} <img src={icon} alt={buttonText}/></button>
   )
 }
 
